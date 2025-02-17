@@ -5,6 +5,10 @@ edition = "2021"
 license = "MIT"
 authors = ["Reverier-Xu <reverier.xu@woooo.tech>"]
 description = "Chat with LLM in your terminal"
+documentation = "https://github.com/Reverier-Xu/llmc"
+repository = "https://github.com/Reverier-Xu/llmc"
+homepage = "https://github.com/Reverier-Xu/llmc"
+readme = "README.md"
 
 [dependencies]
 async-openai = "0.27"
