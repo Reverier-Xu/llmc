@@ -1,0 +1,4 @@
+name = "general-ds-r1"
+model = "deepseek-reasoner"
+provider = "deepseek"
+message = ""

@@ -13,7 +13,7 @@ llmc <your question>
 
 ```bash
 # change profile (configurable)
-llmc -p r1 <your question>
+llmc -p general-ds-r1 <your question>
 
 # ... answers from LLM
 ```
@@ -25,11 +25,4 @@ llmc -s
 # ... answers from LLM
 >> <your question 2>
 # ... answers from LLM
-```
-
-```bash
-# translate, the default source / destination language is configurable.
-llmt -s zh_CN -d en_US <word or paragraph>
-
-# ... translation from LLM
 ```

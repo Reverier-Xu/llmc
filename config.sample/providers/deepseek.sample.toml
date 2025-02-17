@@ -1,0 +1,3 @@
+name = "deepseek"
+token = "sk-deadbeefcafebabec0de"
+api = "https://api.deepseek.com"
