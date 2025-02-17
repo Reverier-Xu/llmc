@@ -3,12 +3,15 @@ name = "llmc"
 version = "0.1.0"
 edition = "2021"
 authors = ["Reverier-Xu <reverier.xu@woooo.tech>"]
-description = "Maybe a simple chat tool for terminal users."
+description = "Chat with LLM in your terminal"
 
 [dependencies]
 async-openai = "0.27"
 clap = { version = "4.5", features = ["derive"] }
 toml = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.43", features = ["full"] }
+termimad = "0.31"
 
 [[bin]]
 name = "llmc"

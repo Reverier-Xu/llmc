@@ -1,2 +1,1 @@
-mod profiles;
-mod prompts;
+mod profile;
