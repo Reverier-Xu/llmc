@@ -2,6 +2,7 @@
 name = "llmc"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
 authors = ["Reverier-Xu <reverier.xu@woooo.tech>"]
 description = "Chat with LLM in your terminal"
 
