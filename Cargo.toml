@@ -1,6 +1,6 @@
 [package]
 name = "llmc"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 authors = ["Reverier-Xu <reverier.xu@woooo.tech>"]
@@ -19,6 +19,7 @@ tokio = { version = "1.43", features = ["full"] }
 termimad = "0.31"
 anyhow = "1.0"
 futures = "0.3"
+shellexpand = "3.1"
 
 [[bin]]
 name = "llmc"

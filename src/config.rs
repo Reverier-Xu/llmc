@@ -1,4 +1,4 @@
-use std::path::Path;
+use std::path::PathBuf;
 
 use async_openai::config::OpenAIConfig;
 use serde::{Deserialize, Serialize};
@@ -37,7 +37,7 @@ const CONFIG_PATH: [&str; 3] = ["/etc/llmc", "~/.config/llmc", "./config"];
 impl Config {
     pub fn try_load() -> Result<Self, Box<(dyn std::error::Error + 'static)>> {
         for path in CONFIG_PATH.iter() {
-            let path = match Path::new(path).canonicalize() {
+            let path: PathBuf = match shellexpand::tilde(path).parse() {
                 Ok(p) => p,
                 Err(_) => {
                     // println!("[stage 1] config path error: {err:?}, original path: {path}");
