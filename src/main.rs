@@ -9,9 +9,12 @@ struct LlmcArgs {
     /// Upload the file to LLM
     #[arg(short, long)]
     file: Option<String>,
-    /// The profile to use
+    /// The profile/model to use
     #[arg(short, long)]
-    profile: Option<String>,
+    model: Option<String>,
+    /// The prompt to use
+    #[arg(short, long)]
+    prompt: Option<String>,
     /// Continuous mode with a prompt shell
     #[arg(short, long)]
     shell: bool,
